@@ -78,6 +78,7 @@ bend 中的计息代币，当用户存入抵押资产时获得 1：1 对应的 b
 
 ---
 参考文档
+
 [dapp-learning aave v2](https://github.com/Dapp-Learning-DAO/Dapp-Learning/tree/main/defi/Aave)
 
 [bend lending protocol doc](https://docs.benddao.xyz/developers/lending-protocol/protocol-overview)
