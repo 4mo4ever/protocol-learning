@@ -174,6 +174,4 @@ function balanceOf(address user)
 
 btoken的设计完全遵循了aave v2 atoken的设计
 
-本文档基于dapp-learning aave v2中`3-AToken.md`的内容做了修改。
-
-原文链接：https://github.com/Dapp-Learning-DAO/Dapp-Learning/blob/main/defi/Aave/contract/3-AToken.md
+参考链接：https://github.com/Dapp-Learning-DAO/Dapp-Learning/blob/main/defi/Aave/contract/3-AToken.md

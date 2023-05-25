@@ -117,6 +117,5 @@ function calculateCompoundedInterest(
 }
 ```
 
-跟aave v2的数学库基本一样，去掉了safemath库的基础运算方法。基本copy了dapp-learning aave v2中`1-mathUtils.md`的内容。
 
-原文链接：https://github.com/Dapp-Learning-DAO/Dapp-Learning/blob/main/defi/Aave/contract/1-MathUtils.md
+参考链接：https://github.com/Dapp-Learning-DAO/Dapp-Learning/blob/main/defi/Aave/contract/1-MathUtils.md
