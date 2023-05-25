@@ -71,7 +71,7 @@ function deposit(
 | amount         | uint256 | 赎回的数量，如果使用 `type(uint).max` 则会赎回最大数量 |
 | to             | address | 赎回资产的转账的目标地址                               |
 
-```js
+```solidity
 /**
  * @dev Withdraws an `amount` of underlying asset from the reserve, burning the equivalent bTokens owned
  * E.g. User has 100 bUSDC, calls withdraw() and receives 100 USDC, burning the 100 bUSDC
@@ -119,7 +119,7 @@ parameters:
 
 债务偿还人和债务受益人可以不同，比如抵押资产在冷钱包中，将信用额度转让给热钱包，便于操作。
 
-```js
+```solidity
 /**
    * @dev Allows users to borrow a specific `amount` of the reserve underlying asset
    * - E.g. User borrows 100 USDC, receiving the 100 USDC in his wallet
@@ -177,7 +177,7 @@ parameters:
 | nftTokenId     | address |  借贷nft的tokenId                   |
 | amount         | uint256 | 偿还的数量，使用 `uint(-1)` 表示偿还所有债务 |
 
-```js
+```solidity
 /**
    * @notice Repays a borrowed `amount` on a specific reserve, burning the equivalent loan owned
    * - E.g. User repays 100 USDC, burning loan and receives collateral asset
@@ -222,7 +222,7 @@ parameters:
 | nftTokenId     | address |  借贷nft的tokenId                   |
 | bidPrice         | uint256 | bidder的出价 |
 
-```js
+```solidity
 /**
    * @dev Function to auction a non-healthy position collateral-wise
    * - The bidder want to buy collateral asset of the user getting liquidated
@@ -271,7 +271,7 @@ parameters:
 | amount         | uint256 | 还款金额 |
 | bidFine         | uint256 | 出价罚款 |
 
-```js
+```solidity
 /**
    * @notice Redeem a NFT loan which state is in Auction
    * - E.g. User repays 100 USDC, burning loan and receives collateral asset
@@ -318,7 +318,7 @@ parameters:
 | nftTokenId     | address |  借贷nft的tokenId                   |
 | amount         | uint256 | 用于偿还债务的额外金额，一般为0 |
 
-```js
+```solidity
 /**
    * @dev Function to liquidate a non-healthy position collateral-wise
    * - The caller (liquidator) buy collateral asset of the user getting liquidated, and receives
@@ -362,7 +362,7 @@ LendPool 中的主要数据类型。
 - NftData nft的数据变量
 - ReserveConfigurationMap 资产的设置，以 bitmap 形式存储，即用一个 unit256 位数字存储，不同位数对应不同的配置。
 - NftConfigurationMap nft的配置，以 bitmap 形式存储。
-```js
+```solidity
 
 library DataTypes {
   struct ReserveData {

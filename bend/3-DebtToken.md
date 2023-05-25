@@ -16,7 +16,7 @@
 
 返回 bToken 对应的抵押资产地址，例如存入 WETH, 那么生成的 bWETH 对应的资产为 WETH
 
-```javascript
+```solidity
 /**
    * @dev Returns the address of the underlying asset of this bToken
    **/
@@ -29,7 +29,7 @@
 
 返回 LendPool 的地址
 
-```javascript
+```solidity
 /**
    * @dev Returns the address of the lend pool where this token is used
    **/
@@ -42,7 +42,7 @@
 
 `msg.sender` 授权给目标地址 `delegatee` 债务额度，承诺可代 `delegatee` 偿还一定数量的债务。
 
-```javascript
+```solidity
 /**
    * @dev delegates borrowing power to a user on the specific debt token
    * @param delegatee the address receiving the delegated borrowing power
@@ -60,7 +60,7 @@
 
 查询目标地址 `fromUser` 提供给 `toUser` 可代还债务的数量
 
-```javascript
+```solidity
 /**
    * @dev returns the borrow allowance of the user
    * @param fromUser The user to giving allowance
@@ -88,7 +88,7 @@
 
 生成浮动利率的 DebtToken 转给借贷还款人。实际mint数量是 amountScaled。
 
-```javascript
+```solidity
 /**
    * @dev Mints debt token to the `user` address
    * -  Only callable by the LendPool
@@ -129,7 +129,7 @@
 
 销毁amount数量的VariableDebtToken，实际burn掉amountScaled。只能被 LendingPool 调用。
 
-```javascript
+```solidity
 
 /**
    * @dev Burns user variable debt
@@ -160,7 +160,7 @@
 
 > 债务利率不断随着池子的利用率产生变化，所以每个池子会全局记录一个 `variableBorrowIndex` 来实时更新债务和缩放数量的比例
 
-```javascript
+```solidity
 /**
    * @dev Calculates the accumulated debt balance of the user
    * @return The debt balance of the user

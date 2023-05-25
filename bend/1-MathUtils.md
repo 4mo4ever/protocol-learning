@@ -22,7 +22,7 @@ parameters:
 
 即时间区间的起点
 
-```javascript
+```solidity
 /**
    * @dev Function to calculate the interest accumulated using a linear interest rate formula
    * @param rate The interest rate, in ray
@@ -65,7 +65,7 @@ parameters:
 - lastUpdateTimestamp 时间区间的起点
 - currentTimestamp 时间区间的终点
 
-``` javascript
+``` solidity
 /**
   * @dev Function to calculate the interest using a compounded interest rate formula
   * To avoid expensive exponentiation, the calculation is performed using a binomial approximation:

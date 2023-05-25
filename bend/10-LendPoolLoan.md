@@ -5,7 +5,7 @@
 
 ### createLoan
 创建贷款 存储贷款信息
-```js
+```solidity
 function createLoan(
     address initiator, // lendpool address
     address onBehalfOf, // 贷款接受地址
@@ -60,7 +60,7 @@ function createLoan(
 
 ### updateLoan
 在增加贷款/偿还后更新信息
-```js
+```solidity
 function updateLoan(
     address initiator,
     uint256 loanId,
@@ -107,7 +107,7 @@ function updateLoan(
 
 ### auctionLoan
 创建或更新拍卖出价
-```js
+```solidity
 /**
    * @inheritdoc ILendPoolLoan
    */
@@ -158,7 +158,7 @@ function updateLoan(
 
 ### redeemLoan
 用户还款赎回nft 拍卖信息清除
-```js
+```solidity
 /**
    * @inheritdoc ILendPoolLoan
    */
@@ -194,7 +194,7 @@ function updateLoan(
 
 ### liquidateLoan
 nft清算
-```js
+```solidity
 /**
    * @inheritdoc ILendPoolLoan
    */

@@ -54,7 +54,7 @@
 
 更新 `liquidity cumulative index` 和 `variable borrow index` 两个变量，若有新增资产，将其中一部分存入金库(Treasury)。
 
-```javascript
+```solidity
 
 /**
    * @dev Updates the liquidity cumulative index and the variable borrow index.
@@ -104,7 +104,7 @@ parameters:
 - liquidityIndex 每单位流动性的收益时间加权累计值
 - variableBorrowIndex 每单位浮动利率类型债务的累计本息总额
 
-```javascript
+```solidity
  /**
    * @dev Updates the reserve indexes and the timestamp of the update
    * @param reserve The reserve reserve to be updated  需要更新的资产
@@ -177,7 +177,7 @@ parameters:
 - liquidityAdded 增加的流动性数量
 - liquidityTaken 减少的流动性数量
 
-```javascript
+```solidity
 struct UpdateInterestRatesLocalVars {
   uint256 availableLiquidity;
   uint256 newLiquidityRate;
@@ -186,7 +186,7 @@ struct UpdateInterestRatesLocalVars {
 }
 ```
 
-```javascript
+```solidity
   /**
    * @dev Updates the reserve current stable borrow rate, the current variable borrow rate and the current liquidity rate
    * @param reserve The address of the reserve to be updated
@@ -247,7 +247,7 @@ struct UpdateInterestRatesLocalVars {
 
 查询每单位债务的本息总额（归一化债务数量）。
 
-```javascript
+```solidity
 /**
    * @dev Returns the ongoing normalized variable debt for the reserve
    * A value of 1e27 means there is no debt. As time passes, the income is accrued

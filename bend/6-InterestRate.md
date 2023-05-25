@@ -44,7 +44,7 @@
 
 利率更新策略模块初始化，会将公式相关变量初始化
 
-```javascript
+```solidity
 constructor(
     ILendPoolAddressesProvider provider,
     uint256 optimalUtilizationRate_,
@@ -65,7 +65,7 @@ constructor(
 
 计算利率的具体方法。
 
-```javascript
+```solidity
 // 缓存计算结果的struct
 struct CalcInterestRatesLocalVars {
   uint256 totalDebt;  // 债务总额
@@ -77,7 +77,7 @@ struct CalcInterestRatesLocalVars {
 
 根据池子资产的状态和配置计算利率。函数返回 流动性回报率，固定利率，浮动利率
 
-```javascript
+```solidity
 /**
    * @dev Calculates the interest rates depending on the reserve's state and configurations.
    * NOTE This function is kept for compatibility with the previous DefaultInterestRateStrategy interface.

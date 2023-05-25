@@ -5,7 +5,7 @@
 
 拍卖逻辑，接受抵押的nft，将债务和借款转给用户（onBehalfOf)，更新利率
 
-```js
+```solidity
 /**
    * @notice Implements the auction feature. Through `auction()`, users auction assets in the protocol.
    * @dev Emits the `Auction()` event.
@@ -126,7 +126,7 @@
 
 ### executeRedeem
 当nft处于拍卖状态时，借款人可以通过偿还部分债务和向bidder支付罚金来使nft退出拍卖状态
-```js
+```solidity
 /**
    * @notice Implements the redeem feature. Through `redeem()`, users redeem assets in the protocol.
    * @dev Emits the `Redeem()` event.
@@ -268,7 +268,7 @@
 - [debtToken.burn()](./3-DebtToken.md#burn)
 
 ### executeLiquidate
-```js
+```solidity
 /**
    * @notice Implements the liquidate feature. Through `liquidate()`, users liquidate assets in the protocol.
    * @dev Emits the `Liquidate()` event.

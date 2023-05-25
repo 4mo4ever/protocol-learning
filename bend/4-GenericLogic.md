@@ -4,7 +4,7 @@
 
 - calculateNftDebtData
 计算nft相关债务 价格需要转换成eth单位
-```js
+```solidity
 function calculateNftDebtData(
     address reserveAddress,
     DataTypes.ReserveData storage reserveData,
@@ -31,7 +31,7 @@ function calculateNftDebtData(
 
 - calculateNftCollateralData
 计算nft的抵押金额
-```js
+```solidity
 function calculateNftCollateralData(
     address reserveAddress,
     DataTypes.ReserveData storage reserveData,
@@ -66,7 +66,7 @@ function calculateNftCollateralData(
 
 - calculatLoanLiquidatePrice
 计算nft清算价格
-```js
+```solidity
 function calculateLoanLiquidatePrice(
     uint256 loanId,
     address reserveAsset,
@@ -127,7 +127,7 @@ function calculateLoanLiquidatePrice(
 - calculateHealthFactorFromBalances  
 计算用户的健康因子, 计算公式为:  
 ( 总质押资产 * 清算阀值 ) / 当前债务总值 
-```js
+```solidity
 function calculateHealthFactorFromBalances(
     uint256 totalCollateral,
     uint256 totalDebt,
@@ -142,7 +142,7 @@ function calculateHealthFactorFromBalances(
 -  calculateAvailableBorrows
 计算用户可借贷的资产总值. 
 计算公式为: ( 用户总质押资产 * 借贷系数 ) - 已借贷资产总值
-```js
+```solidity
 function calculateAvailableBorrows(
     uint256 totalCollateral,
     uint256 totalDebt,
@@ -161,7 +161,7 @@ function calculateAvailableBorrows(
 
 - calculateLoanAuctionEndTimestamp
 计算拍卖和赎回的结束时间
-```js
+```solidity
 function calculateLoanAuctionEndTimestamp(
     DataTypes.NftData storage nftData,
     DataTypes.LoanData memory loanData,
@@ -188,7 +188,7 @@ function calculateLoanAuctionEndTimestamp(
 
 - calculateLoanBidFine
 计算罚款金额
-```js
+```solidity
     function calculateLoanBidFine(
         address reserveAsset,
         DataTypes.ReserveData storage reserveData,
@@ -229,7 +229,7 @@ function calculateLoanAuctionEndTimestamp(
 
 - calculateLoanData
 计算nft贷款信息
-```js
+```solidity
 /**
    * @dev Calculates the nft loan data.
    * this includes the total collateral/borrow balances in Reserve,

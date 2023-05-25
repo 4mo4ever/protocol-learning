@@ -7,7 +7,7 @@
 
 处理资产抵押的逻辑 用户存入一定数量的资产，转给用户（onBehalfOf)当时等价值的btoken
 
-```js
+```solidity
 /**
    * @notice Implements the supply feature. Through `deposit()`, users deposit assets to the protocol.
    * @dev Emits the `Deposit()` event.
@@ -54,7 +54,7 @@
 
 ### executeWithdraw
 处理资产赎回的逻辑 `executeDeposit`的反向操作 销毁btoken，返还原资产给用户
-```js
+```solidity
 /**
    * @notice Implements the supply feature. Through `withdraw()`, users withdraw assets from the protocol.
    * @dev Emits the `Withdraw()` event.

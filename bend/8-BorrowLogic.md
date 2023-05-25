@@ -6,7 +6,7 @@
 
 处理借贷的逻辑，接受抵押的nft，将债务和借款转给用户（onBehalfOf)，更新利率
 
-```js
+```solidity
 /**
    * @notice Implements the borrow feature. Through `borrow()`, users borrow assets from the protocol.
    * @dev Emits the `Borrow()` event.
@@ -24,7 +24,7 @@
   }
 ```
 内部方法 _borrow
-```js
+```solidity
 function _borrow(
     ILendPoolAddressesProvider addressesProvider,
     mapping(address => DataTypes.ReserveData) storage reservesData,
@@ -136,7 +136,7 @@ function _borrow(
 
 ### executeRepay
 处理还款的逻辑
-```js
+```solidity
 /**
    * @notice Implements the borrow feature. Through `repay()`, users repay assets to the protocol.
    * @dev Emits the `Repay()` event.
@@ -154,7 +154,7 @@ function _borrow(
   }
 ```
 内部结构参数
-```js
+```solidity
 struct RepayLocalVars {
     address initiator; //wethgateway
     address poolLoan;   // poolloan地址
@@ -166,7 +166,7 @@ struct RepayLocalVars {
   }
 ```
 内部方法 _repay
-```js
+```solidity
 function _repay(
     ILendPoolAddressesProvider addressesProvider,
     mapping(address => DataTypes.ReserveData) storage reservesData,
