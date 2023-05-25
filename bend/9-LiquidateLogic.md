@@ -386,6 +386,6 @@
 相关代码
 
 - [reserve.updateState()](./5-ReserveLogic.md#updateState)
-- [LendPoolLoan.liquidateLoan()](./10-LendPoolLoan.md#liquidateLoan)
+- [LendPoolLoan.liquidateLoan()](./LendPoolLoan.md#liquidateLoan)
 - [reserve.updateInterestRates()](./5-ReserveLogic.md#updateInterestRates)
 - [debtToken.burn()](./3-DebtToken.md#burn)

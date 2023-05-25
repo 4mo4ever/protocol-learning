@@ -128,8 +128,8 @@ function _borrow(
 相关代码
 
 - [reserve.updateState()](./5-ReserveLogic.md#updateState)
-- [LendPoolLoan.createLoan()](./10-LendPoolLoan.md#createLoan)
-- [LendPoolLoan.updateLoan()](./10-LendPoolLoan.md#updateLoan)
+- [LendPoolLoan.createLoan()](./LendPoolLoan.md#createLoan)
+- [LendPoolLoan.updateLoan()](./LendPoolLoan.md#updateLoan)
 - [reserve.updateInterestRates()](./5-ReserveLogic.md#updateInterestRates)
 - [debtToken.mint()](./3-DebtToken.md#mint)
 
@@ -264,7 +264,7 @@ function _repay(
 相关代码
 
 - [reserve.updateState()](./5-ReserveLogic.md#updateState)
-- [LendPoolLoan.repayLoan()](./10-LendPoolLoan.md#repayLoan)
-- [LendPoolLoan.updateLoan()](./10-LendPoolLoan.md#updateLoan)
+- [LendPoolLoan.repayLoan()](./LendPoolLoan.md#repayLoan)
+- [LendPoolLoan.updateLoan()](./LendPoolLoan.md#updateLoan)
 - [reserve.updateInterestRates()](./5-ReserveLogic.md#updateInterestRates)
 - [debtToken.burn()](./3-DebtToken.md#burn)

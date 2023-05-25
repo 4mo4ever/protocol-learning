@@ -19,7 +19,7 @@ Bend 协议最主要的入口合约，因为bend目前全部使用ETH借贷抵�
 - redeem()
 - liquidate()
 
-详细内容请戳这里 :point_right: [LendPool](./11-LendPool.md)
+详细内容请戳这里 :point_right: [LendPool](./LendPool.md)
 
 #### - LendPoolAddressesProvider
 
